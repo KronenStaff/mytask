@@ -1,0 +1,84 @@
+<div class="main">
+
+  <div class="side-menu">
+    <div class="logo-image">
+      <img src="https://cf.dropboxstatic.com/static/images/brand/glyph@2x-vflJ1vxbq.png" alt="dropbox-logo" />
+    </div>
+    <div class="nav-items">
+      <div class="nav-files">
+        <i class="fa fa-file" aria-hidden="true"></i>
+        <li><a href="#/files"translate="FILES"></a></li>
+      </div>
+      <div class="nav-photos">
+        <i class="fa fa-file-image-o" aria-hidden="true"></i>
+        <li><a href="#/photo" translate="PHOTOS">Photos</a></li>
+      </div>
+      <div class="nav-sharing">
+        <i class="fa fa-share" aria-hidden="true"></i>
+        <li><a href="#/sharing" translate="SHARING">Sharing</a></li>
+      </div>
+      <div class="nav-links">
+        <i class="fa fa-anchor" aria-hidden="true"></i>
+        <li><a href="#/links" translate="LINKS">Links</a></li>
+      </div>
+      <div class="nav-events">
+        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        <li><a href="#/events" translate="EVENTS">Events</a></li>
+      </div>
+      <div class="nav-start">
+        <i class="fa fa-certificate" aria-hidden="true"></i>
+        <li><a href="#/gs" translate="STARTED">Get Started</a></li>
+      </div>
+    </div>
+    <div class="capacity">
+      <li><i class="fa fa-database"></i></li>
+      <li>50 GB / 100 GB</li>
+    </div>
+    <div class="upgrade">
+      <li><i class="fa fa-arrow-up"></i></li>
+      <li translate="UPGRADE_ACCOUNT">Upgrade account</li>
+    </div>
+  </div>
+
+
+  <div class="content">
+<header>
+  <div class="search">
+    <input type="input" ng-model="search" placeholder="Search...">
+  </div>
+  <div class="languages">
+    <li><button type="button" ng-click="changeLanguage('ar')" translate="BUTTON_LANG_AR"></button></li>
+    <li><button type="button" ng-click="changeLanguage('ru')" translate="BUTTON_LANG_RU"></button></li>
+    <li><button type="button" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></button></li>
+  </div>
+  <div class="user-name">
+    <li><a href="#"><i class="fa fa-user"></i></a></li>
+    <li><a href="#">Eddie Lobanovskie</a></li>
+    <li><a href="#"><i class="fa fa-arrow-down"></i></a></li>
+  </div>
+  <div class="content-type">
+    <h1 translate="PHOTOS">Photos</h1>
+  </div>
+  <div class="filters">
+    <li><a  translate="NAME" ng-click="sortBy('name')"></a></li>
+    <li><a  translate="SIZE" ng-click="sortBy('size')"></a></li>
+    <li><a  translate="MODIFIED" ng-click="sortBy('modifedDate')"></a></li>
+  </div>
+</header>
+
+<div class="image-container">
+  <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-controls>
+<div class="images-list fade">
+  <div class="my-item fade"  dir-paginate="d in main.data.images | itemsPerPage: 15 | filter:search | orderBy:propertyName:reverse" current-page="currentPage">
+    <div class="image">
+      <img ng-src="{{ d.imgUrl }}" alt="{{ d.name }}" />
+    </div>
+    <div class="image-info">
+      <p class="image-name">{{d.name}}</p>
+      <p class="image-size">{{d.size}} MB</p>
+    </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>

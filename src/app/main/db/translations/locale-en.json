@@ -1,0 +1,16 @@
+{
+  "BUTTON_LANG_AR": "Arabic",
+  "BUTTON_LANG_EN": "English",
+  "BUTTON_LANG_RU": "Russian",
+  "FILES": "Files",
+  "PHOTOS": "Photos",
+  "SHARING": "Sharing",
+  "LINKS": "Links",
+  "EVENTS": "Events",
+  "STARTED": "Get Started",
+  "SEARCH": "Search...",
+  "NAME": "SortBy: Name",
+  "SIZE": "SortBy: Size",
+  "MODIFIED": "SortBy: Last modified",
+  "UPGRADE_ACCOUNT": "Upgrade account"
+}
