@@ -1,5 +1,8 @@
 # mytask
 
+
+Type: gulp serve, to run the app! Good Luck!
+
 I worked last three days in restourant, and wrote this todo-app overnight...
 I hope u will enjoy! 
 
