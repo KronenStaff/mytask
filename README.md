@@ -3,6 +3,9 @@
 I worked last three days in restourant, and wrote this todo-app overnight...
 I hope u will enjoy! 
 
+CSS and HTML are not very serious in this app, i am waste all time for angular!
+Spent time: 5-6 hours
+
 Michael Konchakovskyy 
 Date: 13/06/2016
 
@@ -23,7 +26,6 @@ https://github.com/Swiip/generator-gulp-angular
 8. Upload the project to GitHub and send us till Sunday 12:00.
 
 
-CSS and HTML are not very serious in this app, i am waste all time for angular!
-Spent time: 5-6 hours
+
 
 
